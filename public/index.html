@@ -1,0 +1,95 @@
+<!--[if lt IE 8]><html class="no-js ie6 oldie" lang="en"> 
+<![endif]--><!--[if IE 7]><html class="no-js ie7 oldie" lang="en">
+<![endif]--><!--[if IE 8]><html class="no-js ie8 oldie" lang="en">
+<![endif]--><!--[if gt IE 8]><!-->
+
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!--
+<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>MySociety Elections</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!-- end CSS-->
+</head>
+
+<body>
+    <div id="container">
+        <div id="main" role="main">
+            <div id="header" role="header">
+                <h1>MySociety Elections Test</h1>
+
+                <h3>Choose a constituency:</h3>
+
+                <ul class="menu" role="menu">
+                    <li class="menuitem" role="menuitem"><a id="uk" href="#">UK</a></li>
+                    <li class="menuitem" role="menuitem"><a id="barking" href="#">Barking</a></li>
+                    <li class="menuitem" role="menuitem"><a id="battersea" href="#">Battersea</a></li>
+                    <li class="menuitem" role="menuitem"><a id="bermondsey" href="#">Bermondsey</a></li>
+                </ul>
+            </div>
+
+            <div id="pie-chart"></div>
+
+            <div id="total">
+                Total Votes: <span id="total-count">0</span>
+            </div>
+
+            <div id="vote-form-wrapper">
+                <h2>Vote</h2>
+
+                <form id="vote-form" action="/vote" method="post">
+                
+                    <div class="form-row clearfix">
+                        <label for="party">Who did you vote for?</label>
+                       	<select name="party" id="party">
+                           	<option value="novote" selected="selected">I did not vote</option>
+                           	<option value="conservative">Conservative</option>
+                           	<option value="labour">Labour</option>
+                            <option value="libdem">Liberal Democrat</option>
+                           	<option value="ukip">UK Independence Party</option>
+                           	<option value="green">Green Party</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row clearfix">
+                        <label for="constituency">What's your constituency?</label> 
+                       	<select name="constituency" id="constituency">
+                       		<option value="barking">Barking</option>
+                           	<option value="battersea">Battersea</option>
+                           	<option value="bermondsey">Bermondsey</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row clearfix">
+                        <label for="email">Your Email address:</label> 
+                        <input type="email" name="email" id="email" />
+                    </div>
+
+                    <div id="vote-form-submit-wrapper" class="form-row">
+                        <input id="vote-submit" type="submit" value="X Vote" />
+                    </div>
+                    
+                </form>
+                
+            </div>
+            
+        </div><!--! end of #main-->
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        	window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')
+        </script>
+        <script src="http://malsup.github.com/jquery.form.js" type="text/javascript"></script>
+        <script src="http://code.highcharts.com/highcharts.js" type="text/javascript"></script>
+        <script src="/socket.io/socket.io.js" type="text/javascript"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+        
+    </div>
+    
+</body>
+</html>
