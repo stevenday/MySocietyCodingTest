@@ -39,7 +39,11 @@ and type:
 
 To run the server.
 
-Then navigate to: http://localhost:3000
+Then navigate to: 
+
+```http://localhost:3000```
+
+To see the site
 
 Usage
 -----
@@ -64,7 +68,7 @@ terminal, run the following command (or the linux/mac equivalent):
 
 ```C:\path_to_mongo\mongo.exe localhost:27017/elections --quiet C:\path_to_repo\MySocietyElectionsChallenge\actionreplay.js```
 
-Then start your browser and navigate to: http://localhost:3000 to watch things
+Then start your browser and navigate to: ```http://localhost:3000``` to watch things
 unfold.
 
 It takes a few minutes to run through, you're looking for a number around 43
@@ -77,7 +81,9 @@ there are plenty of things I'd like to do. In no particular order, these
 include:
 
 * Write some unit and functional tests for the code
-* Cross-browser test
+* Cross-browser test the front-end
+* Optimise the css/javascript resources and performance test it with a lot of 
+  concurrent users
 * Extend the options to include all uk constituencies, perhaps with a postcode 
   lookup to find yours, or a map to select them from, or both
 * Look at verifying the email before a vote is included, the user could be sent
