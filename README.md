@@ -17,8 +17,10 @@ Limitations
 -----------
 I've intentionally limited the constituencies to 3, and the parties available
 are fixed and the same for each. This was to make the interface and database
-simpler and to save time. There is also minimal effort to avoid voting fraud, 
-you just need to supply a unique-looking email address for each vote.
+simpler and to save time. Because of the time constraints, I've not been able to
+make much effort to avoid voting fraud, currently the system just checks that
+you supply a unique-looking email address for each vote, but it doesn't validate
+that you really own this email address.
 
 Required Software
 -----------------
