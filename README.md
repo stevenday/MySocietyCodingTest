@@ -68,8 +68,11 @@ terminal, run the following command (or the linux/mac equivalent):
 
 ```C:\path_to_mongo\mongo.exe localhost:27017/elections --quiet C:\path_to_repo\MySocietyElectionsChallenge\actionreplay.js```
 
-Then start your browser and navigate to: ```http://localhost:3000``` to watch things
-unfold.
+Then start your browser and navigate to: 
+
+```http://localhost:3000```
+
+to watch things unfold.
 
 It takes a few minutes to run through, you're looking for a number around 43
 million in the ```Total``` to know it's done. 
